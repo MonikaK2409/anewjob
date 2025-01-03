@@ -11,7 +11,7 @@ pipeline {
                     // Install dependencies from requirements.txt inside the virtual environment
                     sh '''
                     . ${WORKSPACE}/.venv/bin/activate
-                    pip install -r ${WORKSPACE}/requirements.txt
+                    pip3 install -r ${WORKSPACE}/requirements.txt
                     '''
                 }
             }
